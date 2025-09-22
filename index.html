@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>وقود AI – الإيداع</title>
+  <title>توقعات الذكاء الاصطناعي – الإيداع</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     .console-box {
@@ -36,88 +36,102 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <div id="loading" class="loading-screen">
-    <p>جاري التحميل... قاعدين نجهز تجربتك.</p>
+    <p>⏳ جارٍ التحميل... انتظر لحظة لإعداد تجربتك.</p>
   </div>
   <div id="mainContent" class="hidden-screen">
     <header class="w-full bg-gray-800 p-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-green-400">توقعات 1xBet بالذكاء الاصطناعي</h1>
+      <h1 class="text-xl font-bold text-green-400">توقعات الذكاء الاصطناعي 1xBet</h1>
       <nav class="space-x-4">
-        <a href="#how" class="hover:text-green-400">شلون؟</a>
+        <a href="#how" class="hover:text-green-400">كيف يعمل</a>
         <a href="#games" class="hover:text-green-400">الألعاب</a>
         <a href="#start" class="hover:text-green-400">ابدأ</a>
       </nav>
     </header>
     <section class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
       <h2 class="text-3xl md:text-5xl font-bold mb-6">
-        اربح فلوس حقيقية مع توقعات AI
+        اربح مال حقيقي مع توقعات الذكاء الاصطناعي في الألعاب 🎯
       </h2>
       <div class="mb-4 text-lg font-semibold text-yellow-300">
-        👋 هلا! هذي الخدمة الرسمية من <span class="text-green-400">Yacine</span> !
+        👋 مرحبا بك في الخدمة الرسمية <span class="text-green-400">🇩🇿 Yacine_HackBot</span>
       </div>
       <p class="max-w-xl mb-8 text-gray-300">
-        شارك مع الناس اللي قاعدين يربحون مع Aviator, Mines, Penalty. دقة 98%، توقع مباشر، إيداع وسحب فوري!
+        انضم إلى آلاف الجزائريين الذين يربحون يومياً مع ذكائنا الاصطناعي في ألعاب Aviator، Mines وPenalty. دقة تصل ٩٨٪ وإشارات مباشرة وسحب فوري بالدينار الجزائري!
       </p>
-      <input id="userId" type="text" placeholder="دخل رقم حسابك 1xBet" class="bg-gray-700 text-white p-3 rounded-md mb-4" />
-      <button id="connectButton" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-xl text-lg transition">اربط الحساب</button>
+      <!-- ID input for connection -->
+      <input id="userId" type="text" placeholder="أدخل معرف حسابك في 1xBet" class="bg-gray-700 text-white p-3 rounded-md mb-4" />
+      <button id="connectButton" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-xl text-lg transition">ربط الحساب</button>
+      <!-- Success message -->
       <div id="connectionSuccess" class="hidden text-green-400 font-bold mt-6">
-        <p>رقم الحساب : <span id="accountIdDisplay">1234567890</span> تم الربط بنجاح !</p>
-        <p>الحالة : شغال | توقع دقيق 100% | محلل بالذكاء الاصطناعي</p>
-        <button id="getSignalButton" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl text-lg transition mt-4">خذ الإشارة</button>
+        <p>معرّف الحساب: <span id="accountIdDisplay">1234567890</span> ✔️ تم الربط بنجاح</p>
+        <p>الحالة: نشط | دقة ١٠٠٪ في التوقعات | خوارزميات محللة</p>
+        <button id="getSignalButton" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl text-lg transition mt-4">احصل على إشارة</button>
       </div>
+      <!-- Error message for deposit + PROMOCODE block -->
       <div id="errorBox" class="hidden bg-red-600 p-6 rounded-xl max-w-md mx-auto mt-6">
-        <h2 class="text-xl font-bold mb-2">⚠️ ما حصلنا الإيداع</h2>
-        <p class="mb-4">يبدو رصيدك فاضي. لازم تسوي إيداع <strong>7 BHD</strong> عشان نفعل الإشارات وتبدأ تربح!</p>
-        <a href="https://reffpa.com/L?tag=d_4394384m_45425c_&site=4394384&ad=45425&r=registration" target="_blank" id="depositButton" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-lg transition">
-          سو إيداع على 1xBet
+        <h2 class="text-xl font-bold mb-2">⚠️ لم يتم العثور على إيداع</h2>
+        <p class="mb-4">رصيدك فارغ. الرجاء القيام بإيداع لا يقل عن <strong>1800 DZD</strong> لفتح الإشارات وبدء الربح.</p>
+        <a href="https://reffpa.com/L?tag=d_4772847m_97c__[]general[]_d173877_l222616_adaptive_banner&site=4772847&ad=97&r=registration" target="_blank" id="depositButton" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-lg transition">
+          أودع الآن في 1xBet
         </a>
+        <!-- Código promocional -->
         <div class="mt-6 bg-red-800 text-white p-4 rounded-lg font-bold text-center">
-          <div class="mb-1 text-lg">كود الترويج : <span class="bg-black p-1 rounded text-green-400">BH788</span></div>
-          <div>تأكد تسجل بالكود عشان تاخذ كل المزايا!</div>
+          <div class="mb-1 text-lg">رمزك الترويجي: <span class="bg-black p-1 rounded text-green-400">RRTOP</span></div>
+          <div>تذكّر أن التسجيل يجب أن يكون <span class="underline">فقط</span> بهذا الرمز للاستفادة من كل الميزات!</div>
         </div>
       </div>
     </section>
+    <!-- Ganadores del día -->
     <section class="bg-gray-800 py-12 px-6 text-center">
-      <h3 class="text-2xl font-bold text-green-400 mb-6">الناس اللي ربحوا اليوم (BHD)</h3>
+      <h3 class="text-2xl font-bold text-green-400 mb-6">الفائزون اليوم (DZD)</h3>
       <div class="grid md:grid-cols-2 gap-4 text-left max-w-4xl mx-auto text-sm text-green-300">
-        <p>👤 رقم الحساب : 1218473422 – 720 BHD</p>
-        <p>👤 رقم الحساب : 9912384741 – 610 BHD</p>
-        <p>👤 رقم الحساب : 3099234822 – 450 BHD</p>
-        <p>👤 رقم الحساب : 1187339121 – 370 BHD</p>
+      <p>👤 مستخدم: 2135678910 – 275,000 DZD</p>
+      <p>👤 مستخدم: 0559834721 – 220,500 DZD</p>
+      <p>👤 مستخدم: 0661987452 – 180,000 DZD</p>
+      <p>👤 مستخدم: 0773892112 – 150,000 DZD</p>
+      <p>👤 مستخدم: 0792038471 – 132,800 DZD</p>
+      <p>👤 مستخدم: 0692847362 – 128,000 DZD</p>
+      <p>👤 مستخدم: 0554921811 – 100,700 DZD</p>
+      <p>👤 مستخدم: 0794839201 – 98,000 DZD</p>
+      <p>👤 مستخدم: 0673829102 – 85,000 DZD</p>
+      <p>👤 مستخدم: 0774839201 – 79,200 DZD</p>
+
       </div>
     </section>
+    <!-- Juegos soportados -->
     <section id="games" class="bg-gray-800 py-12 px-6 text-center">
-      <h3 class="text-2xl font-bold text-green-400 mb-6">الألعاب المدعومة</h3>
+      <h3 class="text-2xl font-bold text-green-400 mb-6">الألعاب المتوفرة</h3>
       <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
           <h4 class="text-xl font-bold mb-2">🎮 Aviator</h4>
-          <p class="text-gray-300">توقع قبل الطيارة تطير! ذكاءنا يتعرف على النمط مباشر.</p>
+          <p class="text-gray-300">توقع وقت السحب قبل أن تقلع الطائرة. ذكاؤنا الاصطناعي يحلل الاتجاهات مباشرة.</p>
         </div>
         <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
           <h4 class="text-xl font-bold mb-2">💣 Mines</h4>
-          <p class="text-gray-300">تجنب القنابل واربح. النظام يلقالك الطريق بأقل خطورة.</p>
+          <p class="text-gray-300">تجنب الألغام واربح. نظامنا يحدد لك المسارات الأقل خطراً لزيادة أرباحك.</p>
         </div>
         <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
           <h4 class="text-xl font-bold mb-2">🥅 Penalty</h4>
-          <p class="text-gray-300">عرف وين تشوت أو وين الحارس بيمسك. توقع مبني على البيانات.</p>
+          <p class="text-gray-300">أين تسدد أو تقفز؟ تفوق على الحارس بتوقعات مبنية على البيانات.</p>
         </div>
       </div>
     </section>
+    <!-- Cómo funciona -->
     <section id="how" class="bg-gray-900 py-12 px-6 text-center">
-      <h3 class="text-2xl font-bold text-green-400 mb-6">شلون؟</h3>
+      <h3 class="text-2xl font-bold text-green-400 mb-6">كيف يعمل</h3>
       <div class="max-w-3xl mx-auto space-y-4 text-gray-300">
-        <p>📡 الذكاء الاصطناعي يحلل بيانات مباشرة وتاريخ الألعاب 24/7.</p>
-        <p>💡 يلقط أنماط الفوز بشكل دائم.</p>
-        <p>📲 توصلك إشارات مباشرة على جهازك.</p>
+        <p>📡 ذكاؤنا الاصطناعي يحلل بيانات حية وسجل الألعاب على مدار الساعة.</p>
+        <p>💡 يكشف عن أنماط تساعدك على تحقيق أرباح ثابتة.</p>
+        <p>📲 تستقبل إشارات دقيقة في الوقت الحقيقي مباشرة على جهازك.</p>
       </div>
     </section>
     <section class="bg-black py-12 px-6 text-center">
-      <h3 class="text-xl font-bold text-green-400 mb-4">[ Console – سجل المراقبة ]</h3>
+      <h3 class="text-xl font-bold text-green-400 mb-4">[ وحدة المراقبة – السجل ]</h3>
       <div class="console-box max-w-3xl mx-auto text-left" id="console">
-        <p>[INFO] خدمة التوقع شغالة ✅</p>
+        <p>[INFO] الخدمة نشطة ✅</p>
       </div>
     </section>
     <footer class="text-center text-gray-500 text-sm py-6">
-      © 2025 AI Predictor. غير مرتبط بـ 1xBet. استخدم بمسؤولية.
+      © 2025 توقعات الذكاء الاصطناعي. غير تابع لـ 1xBet. العب بمسؤولية.
     </footer>
   </div>
   <script>
@@ -125,6 +139,7 @@
       document.getElementById("loading").classList.add("hidden-screen");
       document.getElementById("mainContent").classList.remove("hidden-screen");
     }, 3000);
+
     document.getElementById("connectButton").addEventListener("click", () => {
       const userId = document.getElementById("userId").value;
       if (userId) {
@@ -133,6 +148,7 @@
         document.getElementById("errorBox").classList.add("hidden");
       }
     });
+
     document.getElementById("getSignalButton").addEventListener("click", () => {
       document.getElementById("errorBox").classList.remove("hidden");
     });
